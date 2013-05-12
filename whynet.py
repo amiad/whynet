@@ -2,7 +2,7 @@
 import sys, urllib2, os, re, argparse
 
 # get arguments
-parser = argparse.ArgumentParser(description='Download video from Ynet (and Hot & Reshet).')
+parser = argparse.ArgumentParser(description='Download video from Ynet (and Hot).')
 parser.add_argument('url', help = 'page url')
 parser.add_argument('-o', dest = 'file', help = 'output file')
 args = parser.parse_args()
