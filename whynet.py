@@ -6,7 +6,7 @@ page = urllib2.urlopen(url).read()
 
 link = (re.search('(rtmp%3A%2F%2F((?!%22).)*)%22',page))
 if link is None: 
-	print "Not Found Clip"
+	print "Clip not found!"
 	exit()
 link = urllib2.unquote(link.group(1)) 
 filename = os.path.basename(link)
